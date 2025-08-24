@@ -1,9 +1,4 @@
-/*
- * SPDX-FileCopyrightText: 2024-2025 SiFli Technologies(Nanjing) Co., Ltd
- *
- * SPDX-License-Identifier: Apache-2.0
- */
-
+/*  编译测试  */
 #include "rtthread.h"
 #include "bf0_hal.h"
 #include "drv_io.h"

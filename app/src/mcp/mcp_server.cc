@@ -175,7 +175,7 @@ void McpServer::AddCommonTools() {
         });
 
        //测试
-        AddTool("self.test.enable",
+        AddTool("self.temperature_humidity.status",
         "Get the current temperature and humidity.",
         PropertyList(),
         [=](const PropertyList&) -> ReturnValue 

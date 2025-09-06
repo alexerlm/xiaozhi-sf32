@@ -100,7 +100,8 @@ void McpServer::AddCommonTools() {
         AddTool("self.screen.get_bbrightness",
         "Get the current brightness of the screen.",
         PropertyList(),
-        [=](const PropertyList&) -> ReturnValue {
+        [=](const PropertyList&) -> ReturnValue 
+        {
             const char* json_str = R"({"method":"GetBrightness","parameters":{}})";
             cJSON* cmd = cJSON_Parse(json_str);
             screen->Invoke(cmd);
@@ -175,14 +176,13 @@ void McpServer::AddCommonTools() {
 
        //测试
         AddTool("self.test.enable",
-        "Enable the test.",
+        "Get the current temperature and humidity.",
         PropertyList(),
         [=](const PropertyList&) -> ReturnValue 
         {
             rt_kprintf("test enable\n");
-            return true;
-            // ctrl_wakeup(true);
-            // return true;
+            return {"temperature:90.5°c,humidity:60%"};
+            
         });   
 
 

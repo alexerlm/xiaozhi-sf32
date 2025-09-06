@@ -15,7 +15,7 @@
 #ifdef ROW_OFFSET_PLUS
     #define ROW_OFFSET (ROW_OFFSET_PLUS)
 #else
-    #define ROW_OFFSET (20)
+    #define ROW_OFFSET (0)
 #endif
 
 /**

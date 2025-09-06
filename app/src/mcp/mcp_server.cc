@@ -174,7 +174,7 @@ void McpServer::AddCommonTools() {
             return (bool)(!vad_enable);
         });
 
-       //测试
+       //温湿度mcp修改
         AddTool("self.temperature_humidity.status",
         "Get the current temperature and humidity.",
         PropertyList(),
